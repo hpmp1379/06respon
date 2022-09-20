@@ -11,11 +11,18 @@
     <script src="https://kit.fontawesome.com/ea416fc906.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script defer src="js/main.js"></script>
+    <!-- savefrom.net 동영상 다운받기 -->
+    <!-- placeholder.com 더미이미지 -->
 </head>
 <body>
     <div id="header_wrap">
         <header>
-            <h1><img src="img/logo.png" alt="logo"></h1>
+            <h1>
+                <a href="#">
+                <!-- <img src="img/logo.png" alt="logo"> -->
+                <span>ION</span><span>SPA</span>
+                </a>
+            </h1>
             <nav>
                 <ul>
                     <li><a href="#">제품소개</a></li>
@@ -32,11 +39,53 @@
             <div class="reservation_wrap">
                 <a href="#">구매하기</a>
             </div>
-            <a href="#" class="m_menuBtn"></a>
-            <div>
-                <iframe src="https://player.vimeo.com/video/346286247?background=1&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;muted=1&amp;quality=1080p" title="0&amp;byline=0&amp;portrait=0&quot;" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true" frameborder="0"></iframe>
-            </div>
+            <a href="#" class="m_menuBtn">
+                <span class="m_menuBtn_line"></span>
+                <span class="m_menuBtn_line"></span>
+            </a>
         </header>
     </div>
+
+    <main>
+        <div class="main_full">
+            <section class="main_visual">
+                <!-- 동영상 포맷이 여러개있으면 source tag를 사용할수도있다 -->
+                <!-- muted, 접근성 필수, autoplay 브라우저 열면 자동 재생 -->
+                <!-- control 동영상 조절, playsinline ??? -->
+                <video controls autoplay muted playsinline poster="mov/main_visual.jpg">
+                    <source src="mov/bg240.mp4" type="video/mp4">
+                    이 브라우저에서는 동영상 기능을 지원하지 않습니다.
+                </video>
+            </section>
+            <section class="con1">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, veniam accusamus ipsam corrupti odit nisi doloremque exercitationem mollitia fuga doloribus alias nostrum, sint asperiores, ipsa vero. Itaque repellat ullam facilis?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quam placeat debitis laudantium non officia nihil reprehenderit, at eum porro eligendi blanditiis vero tenetur voluptatum laborum repellat quas in optio.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos accusantium deserunt ipsum enim, ab magnam modi, magni quis molestiae quam quibusdam. Accusantium, sunt! Neque beatae dolorum optio incidunt recusandae delectus.
+                </p>
+            </section>
+            <section class="con2">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis laboriosam debitis velit, sequi tempora maiores facilis magni repellendus soluta officiis recusandae suscipit unde ea culpa. Repudiandae autem eum consequatur doloribus maiores aliquam quae voluptate eos error animi? Ex odio et voluptatibus! Rem consectetur at laudantium iusto eligendi unde repellendus ad inventore tempore! Nam accusantium molestias quisquam placeat rerum distinctio qui? Quibusdam ipsam beatae aspernatur doloribus nulla enim voluptatem minus molestias ipsum nihil voluptas iure incidunt consectetur saepe culpa necessitatibus porro, ad dolorem tempora reprehenderit? A mollitia aliquam veritatis deleniti soluta corrupti natus temporibus nihil earum, quo, ducimus tempore. Libero.
+                </p>
+                <ul>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis laboriosam debitis velit, sequi tempora maiores facilis magni repellendus soluta officiis recusandae suscipit unde ea culpa. Repudiandae autem eum consequatur doloribus maiores aliquam quae voluptate eos error animi? Ex odio et voluptatibus! Rem consectetur at laudantium iusto eligendi unde repellendus ad inventore tempore! Nam accusantium molestias quisquam placeat rerum distinctio qui? Quibusdam ipsam beatae aspernatur doloribus nulla enim voluptatem minus molestias ipsum nihil voluptas iure incidunt consectetur saepe culpa necessitatibus porro, ad dolorem tempora reprehenderit? A mollitia aliquam veritatis deleniti soluta corrupti natus temporibus nihil earum, quo, ducimus tempore. Libero.
+                </p>
+            </section>
+        </div>
+        <!-- <iframe src="https://player.vimeo.com/video/346286247?background=1&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;muted=1&amp;quality=1080p" title="0&amp;byline=0&amp;portrait=0&quot;" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true" frameborder="0"></iframe> -->
+    </main>
+    
 </body>
 </html>
