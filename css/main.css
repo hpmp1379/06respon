@@ -1,1 +1,129 @@
 @charset "UTF-8";
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#header_wrap{
+    position: fixed; top: 0; left: 0;
+    width: 100%;
+    background: darkblue;
+    background: transparent;
+    z-index: 5;
+}
+header {
+    position: relative;
+    margin: 0 5vw;
+}
+
+.logo {
+    position: absolute;
+    top: 30px; left: 0px;
+    transition: all 300ms;
+}
+.logo a {
+    display: block;
+    color: #fff;
+    font-weight: normal;
+    line-height: 1;
+}
+.logo01 {
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+.logo02 {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+.menu_container {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+#menu {
+    display: inline-block;
+}
+#menu > li {
+    display: inline-block;
+}
+#menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+}
+
+.search_container {
+    position: absolute;
+    right: 190px; top: 45px;
+}
+.search_container a {
+    color: #fff;
+    font-size: 0.8rem;
+}
+.reservation_container {
+    position: absolute;
+    right: 0; top: 30px;
+}
+.reservation_container a {
+    display: block;
+    padding: 15px 30px;
+    color: #fff;
+    transition: all 300ms;
+    border: 1px solid #fff;
+}
+
+.m_menuBtn {
+    display: none;
+    position: absolute;
+    right: 0; top: 30px;
+    width: 24px; height: 24px;
+}
+.m_menuBtn span {
+    position: absolute;
+    width: 100%; height: 4px;
+    background: #fff;
+}
+.m_menuBtn_line1 {
+    top: 5px;
+}
+.m_menuBtn_line2 {
+    top: 14px;
+}
+.m_menuBtn.on .m_menuBtn_line1 {
+    transform: rotate(45deg);
+    top: 8px;
+}
+.m_menuBtn.on .m_menuBtn_line2 {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+main {
+}
+.main_full {}
+
+.main_visual {
+    position: relative;
+    width: 100%; height: 100vh;
+}
+.main_visual video {
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+.main_text_container {
+    position: absolute;
+    border: 2px solid yellow;
+    left: 0px; width: 100%;
+    top: 50%; transform: translateY(-50%);
+    text-align: center;
+}
+.main_text {
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+.main_text_reservation {}
+.main_text_reservation a{}

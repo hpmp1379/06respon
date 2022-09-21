@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>비디오 배경, 헤더고정</title>
     <link rel="icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/rwd.css">
     <script src="https://kit.fontawesome.com/ea416fc906.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script defer src="js/main.js"></script>
@@ -17,14 +21,14 @@
 <body>
     <div id="header_wrap">
         <header>
-            <h1>
+            <h1 class="logo">
                 <a href="#">
-                <!-- <img src="img/logo.png" alt="logo"> -->
-                <span>ION</span><span>SPA</span>
+                    <!-- <img src="img/logo.png" alt="logo"> -->
+                    <span class="logo01">ION</span><span class="logo02">SPA</span>
                 </a>
             </h1>
-            <nav>
-                <ul>
+            <nav class="menu_container">
+                <ul id="menu">
                     <li><a href="#">제품소개</a></li>
                     <li><a href="#">자화수란?</a></li>
                     <li><a href="#">사용후기</a></li>
@@ -33,15 +37,15 @@
                     <li><a href="#">고객지원</a></li>
                 </ul>
             </nav>
-            <div class="global_wrap">
-                <a href="#"></a>
+            <div class="search_container">
+                <a href="#"><i class="fa-brands fa-searchengin"></i></a>
             </div>
-            <div class="reservation_wrap">
+            <div class="reservation_container">
                 <a href="#">구매하기</a>
             </div>
             <a href="#" class="m_menuBtn">
-                <span class="m_menuBtn_line"></span>
-                <span class="m_menuBtn_line"></span>
+                <span class="m_menuBtn_line1"></span>
+                <span class="m_menuBtn_line2"></span>
             </a>
         </header>
     </div>
@@ -52,18 +56,22 @@
                 <!-- 동영상 포맷이 여러개있으면 source tag를 사용할수도있다 -->
                 <!-- muted, 접근성 필수, autoplay 브라우저 열면 자동 재생 -->
                 <!-- control 동영상 조절, playsinline ??? -->
-                <video controls autoplay muted playsinline poster="mov/main_visual.jpg">
+                <video autoplay muted playsinline loop poster="mov/main_visual.jpg">
                     <source src="mov/bg240.mp4" type="video/mp4">
                     이 브라우저에서는 동영상 기능을 지원하지 않습니다.
                 </video>
+                <div class="main_text_container">
+                    <p class="main_text">차원이 다른 샤워기</p>
+                    <div class="main_text_reservation">
+                        <a href="#">구매하기</a>
+                    </div>
+                </div>
             </section>
             <section class="con1">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, veniam accusamus ipsam corrupti odit nisi doloremque exercitationem mollitia fuga doloribus alias nostrum, sint asperiores, ipsa vero. Itaque repellat ullam facilis?
                 </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quam placeat debitis laudantium non officia nihil reprehenderit, at eum porro eligendi blanditiis vero tenetur voluptatum laborum repellat quas in optio.
-                </p>
+                <img src="https://via.placeholder.com/550x150" alt="">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos accusantium deserunt ipsum enim, ab magnam modi, magni quis molestiae quam quibusdam. Accusantium, sunt! Neque beatae dolorum optio incidunt recusandae delectus.
                 </p>
@@ -73,11 +81,11 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis laboriosam debitis velit, sequi tempora maiores facilis magni repellendus soluta officiis recusandae suscipit unde ea culpa. Repudiandae autem eum consequatur doloribus maiores aliquam quae voluptate eos error animi? Ex odio et voluptatibus! Rem consectetur at laudantium iusto eligendi unde repellendus ad inventore tempore! Nam accusantium molestias quisquam placeat rerum distinctio qui? Quibusdam ipsam beatae aspernatur doloribus nulla enim voluptatem minus molestias ipsum nihil voluptas iure incidunt consectetur saepe culpa necessitatibus porro, ad dolorem tempora reprehenderit? A mollitia aliquam veritatis deleniti soluta corrupti natus temporibus nihil earum, quo, ducimus tempore. Libero.
                 </p>
                 <ul>
-                    <li>lorem</li>
-                    <li>lorem</li>
-                    <li>lorem</li>
-                    <li>lorem</li>
-                    <li>lorem</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem, ipsum dolor.</li>
                 </ul>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis laboriosam debitis velit, sequi tempora maiores facilis magni repellendus soluta officiis recusandae suscipit unde ea culpa. Repudiandae autem eum consequatur doloribus maiores aliquam quae voluptate eos error animi? Ex odio et voluptatibus! Rem consectetur at laudantium iusto eligendi unde repellendus ad inventore tempore! Nam accusantium molestias quisquam placeat rerum distinctio qui? Quibusdam ipsam beatae aspernatur doloribus nulla enim voluptatem minus molestias ipsum nihil voluptas iure incidunt consectetur saepe culpa necessitatibus porro, ad dolorem tempora reprehenderit? A mollitia aliquam veritatis deleniti soluta corrupti natus temporibus nihil earum, quo, ducimus tempore. Libero.
